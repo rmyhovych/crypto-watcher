@@ -1,0 +1,6 @@
+spidev==3.5
+requests==2.21.0
+pytz==2021.1
+numpy==1.16.2
+Pillow==8.2.0
+RPi==0.0.1
