@@ -1,3 +1,4 @@
+# TODO: Uncomment the lcd_1in44 line and comment the lcd_stub one if you want to run it on the display
 # from lcd_1in44 import LCD
 from lcd_stub import LCD
 
@@ -81,7 +82,7 @@ def main():
 
     timezone = pytz.timezone("US/Eastern")
     while True:
-        price, diff, ohlc = fetch_crypto_data("btcusdt")
+        price, diff, ohlc = fetch_crypto_data("btcusdt") # TODO: use any binance symbol you want (Ex.: DOGE = dogeusdt)
 
         draw = ImageDraw.Draw(img)
         draw.rectangle((0, 0, lcd.width, lcd.height), fill=(0, 0, 0, 0))
